@@ -1,0 +1,25 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-same-tree",
+      "appliesTo": "Leetcode/Leetcode/Recursion/same-tree.cpp",
+      "type": "command"
+    },
+    {
+      "taskName": "task-main",
+      "appliesTo": "Leetcode/Leetcode/main.cpp",
+      "type": "command"
+    },
+    {
+      "taskName": "task-Binary_Tree",
+      "appliesTo": "Leetcode/Leetcode/Binary_Tree.cpp",
+      "type": "command"
+    },
+    {
+      "taskName": "task-hello_world",
+      "appliesTo": "Leetcode/Leetcode/hello_world.cpp",
+      "type": "command"
+    }
+  ]
+}
