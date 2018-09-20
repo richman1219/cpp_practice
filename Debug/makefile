@@ -38,19 +38,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: cpp_practice.exe
+all: leet_code.exe
 
 # Tool invocations
-cpp_practice.exe: $(OBJS) $(USER_OBJS)
+leet_code.exe: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cygwin C++ Linker'
-	g++ -L"C:\Users\Rich\Documents\OneDrive\FACA\code\misc\Cpp" -L"C:\Users\Rich\Documents\OneDrive\FACA\code\misc\Cpp\header" -o "cpp_practice.exe" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"C:\Users\Rich\Documents\OneDrive\FACA\code\source_tree\cpp_practice" -L"C:\Users\Rich\Documents\OneDrive\FACA\code\source_tree\cpp_practice\header" -o "leet_code.exe" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) cpp_practice.exe
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) leet_code.exe
 	-@echo ' '
 
 .PHONY: all clean dependents
