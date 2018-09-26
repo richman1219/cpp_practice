@@ -26,7 +26,7 @@ int main()
 	//main_MinStack();
 
 	/*array*/
-	main_3sum();
+	//main_3sum();
 
 	/*hash table*/
 	//main_twoSum();
@@ -38,5 +38,9 @@ int main()
 	//main_binary_search_tree_iterator();
 	//main_binary_tree_paths();
 	//main_two_sum_bst();
+
+  /*Bit Manipulation*/
+
+
 }
 
