@@ -26,9 +26,8 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.34894778" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug">
 								<option id="gnu.cpp.compiler.cygwin.exe.debug.option.optimization.level.345156437" name="Optimization Level" superClass="gnu.cpp.compiler.cygwin.exe.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.cygwin.exe.debug.option.debugging.level.908283866" name="Debug Level" superClass="gnu.cpp.compiler.cygwin.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.include.paths.359958108" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Rich\Documents\OneDrive\FACA\code\source_tree\cpp_practice&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Rich\Documents\OneDrive\FACA\code\source_tree\cpp_practice\header&quot;"/>
+								<option id="gnu.cpp.compiler.option.include.paths.359958108" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\eclipse_code\cpp_practice\header&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1987874030" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
 							</tool>
@@ -39,9 +38,8 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug.1309948705" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.debug.1281759452" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.debug">
-								<option id="gnu.cpp.link.option.paths.208209465" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Rich\Documents\OneDrive\FACA\code\source_tree\cpp_practice&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Rich\Documents\OneDrive\FACA\code\source_tree\cpp_practice\header&quot;"/>
+								<option id="gnu.cpp.link.option.paths.208209465" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;C:\eclipse_code\cpp_practice\header&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1166609330" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -101,48 +99,42 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="leet_code.cdt.managedbuild.target.gnu.cygwin.exe.592314700" name="Executable" projectType="cdt.managedbuild.target.gnu.cygwin.exe"/>
+		<project id="cpp_pratice.cdt.managedbuild.target.gnu.cygwin.exe.67554693" name="Executable" projectType="cdt.managedbuild.target.gnu.cygwin.exe"/>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.581071940;cdt.managedbuild.config.gnu.cygwin.exe.release.581071940.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.114608563;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1789660771">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.2140637786;cdt.managedbuild.config.gnu.cygwin.exe.debug.2140637786.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.818710557;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1451097030">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.581071940;cdt.managedbuild.config.gnu.cygwin.exe.release.581071940.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.102885378;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.2083136250">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.1370470473;cdt.managedbuild.config.gnu.cygwin.exe.release.1370470473.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.794664657;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.178246440">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.2140637786;cdt.managedbuild.config.gnu.cygwin.exe.debug.2140637786.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.2054289012;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1701706018">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.1814733310;cdt.managedbuild.config.gnu.cygwin.exe.release.1814733310.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1264958850;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.260451856">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.581071940;cdt.managedbuild.config.gnu.cygwin.exe.release.581071940.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.102885378;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.2083136250">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.235426839;cdt.managedbuild.config.gnu.cygwin.exe.debug.235426839.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.1703210707;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.82609391">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.623081261;cdt.managedbuild.config.gnu.cygwin.exe.debug.623081261.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.773235289;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1144161072">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.581071940;cdt.managedbuild.config.gnu.cygwin.exe.release.581071940.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.114608563;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1789660771">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.1398658811;cdt.managedbuild.config.gnu.cygwin.exe.release.1398658811.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.164345172;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1990433103">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.235426839;cdt.managedbuild.config.gnu.cygwin.exe.debug.235426839.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.1057889809;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1819176946">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.1814733310;cdt.managedbuild.config.gnu.cygwin.exe.release.1814733310.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.1783787893;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1924983402">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.1398658811;cdt.managedbuild.config.gnu.cygwin.exe.release.1398658811.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.2008794342;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1603539577">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.2023279814;cdt.managedbuild.config.gnu.cygwin.exe.debug.2023279814.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.397166950;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1569546732">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.623081261;cdt.managedbuild.config.gnu.cygwin.exe.debug.623081261.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.34894778;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1987874030">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.1370470473;cdt.managedbuild.config.gnu.cygwin.exe.release.1370470473.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1228620926;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.579886801">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.2023279814;cdt.managedbuild.config.gnu.cygwin.exe.debug.2023279814.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.868486426;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.154357689">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.debug.623081261;cdt.managedbuild.config.gnu.cygwin.exe.debug.623081261.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.773235289;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1144161072">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-	<storageModule moduleId="refreshScope"/>
 </cproject>

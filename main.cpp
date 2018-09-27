@@ -12,10 +12,13 @@
 //#include "two_sum_input_is_a_bst.h"
 
 /*array*/
-#include "3sum.h"
+//#include "3sum.h"
 
 /*stack*/
 //#include "min_stack.h"
+
+/*Misc*/
+#include "reverse_even_digits.h"
 
 
 using namespace std;
@@ -40,6 +43,9 @@ int main()
 	//main_two_sum_bst();
 
   /*Bit Manipulation*/
+
+  /*Misc*/
+  main_reverse_string();
 
 
 }
