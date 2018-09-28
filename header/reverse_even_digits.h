@@ -21,10 +21,10 @@ using namespace std;
  *Try not to use so much data structure, as less as possible, unless...
 */
 
-/*need to take care
+/*Note
  * sizeof usage
  * printf usage
- * for loop index j--, need to use test pattern to test
+ * for loop index j--, need to use test pattern to test corner case!!
  */
 
 
