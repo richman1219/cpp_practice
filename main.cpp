@@ -48,5 +48,5 @@ int main()
   main_reverse_string();
 
 
-}
+};
 
