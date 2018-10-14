@@ -386,6 +386,7 @@ void main_test()
 			cout << "Enter the number to be inserted : ";
 			cin >> temp->val;
 			bst.insert(root, temp);
+			break;
 		case 2:
 			if (root == NULL)
 			{
