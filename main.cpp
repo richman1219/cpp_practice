@@ -17,9 +17,9 @@
 /*stack*/
 //#include "min_stack.h"
 
-/*Misc*/
-#include "reverse_even_digits.h"
-
+/*String*/
+//#include "reverse_even_digits.h"
+#include "buddy_string.h"
 
 using namespace std;
 
@@ -44,9 +44,9 @@ int main()
 
   /*Bit Manipulation*/
 
-  /*Misc*/
-  main_reverse_string();
-
+  /*String*/
+  //main_reverse_string();
+  main_buddy_string();
 
 };
 
