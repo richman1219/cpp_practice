@@ -9,6 +9,8 @@
 #define HEADER_BUDDY_STRING_H_
 
 #include <iostream>  // Basic input and output library
+#include <stdio.h>
+#include <string.h>
 
 using namespace std;
 
@@ -18,63 +20,68 @@ using namespace std;
  */
 
 /*Think flow
- *Try not to use so much data structure, as less as possible, unless...
+ *sequential search for each pair of characters, and compare the other part
+ *remove corner case
+ *UT for the function
 */
 
 /*Note
- * sizeof/ strlen usage
- * printf usage, for string, just put the pointer of string instead
- * for loop index j--, need to use test pattern to test corner case!!
  */
 
 
-class solution_reverse_even_digits {
+class solution_buddy_string {
 public:
-  void reverse(char str_input[])
+  bool compare(char str_a[], char str_b[])
   {
-    int num_digits = sizeof(str_input)/sizeof(char) - 1; //[TODO], Rich, Remember to subtract 1 for null terminator
+    int len_a = strlen(str_a);
+    int len_b = strlen(str_b);
 
-    int i= 0, j = num_digits-1;
-    char temp;
+    bool same_flag = true;
 
-    //find even digits
-    for (;i<num_digits;i++)
+    //corner case handling
+
+    //normal case handling
+    for(int i=0;i<len_a;i++)
     {
-      if(i != j)
-      {
-        if((str_input[i]&0x1) == 0x0)
-        {
-          for (;j >= 0; j--)
-          {
 
-              if((str_input[j]&0x1) == 0x0)
-              {
-                //swap
-                temp = str_input[i];
-                str_input[i] = str_input[j];
-                str_input[j] = temp;
-                j--;
-                break;
-              }
+      if(str_a[i] == str_b[i])
+      {
+        continue;
+      }
+      else
+      {
+        if((str_a[i] == str_b[i+1]) && (str_a[i+1] == str_b[i]))
+        {
+          //continue compare the other part in the string
+          if(i + 1 < len_a)
+          {
+            i = i + 1;
+            continue;
           }
         }
-     }
-     else
-     { return;} //i==j
-   }
- }
+        else
+        {
+          same_flag = false;
+        }
+      }
+
+    }
+  }
+
 };
 
 
-int main_reverse_string()
+int main_buddy_string()
 {
-  char str_input[8] = "2633834";
+  char str_a[] = "aaabcddd";
+  char str_b[] = "aaacbddd";
 
-  solution_reverse_even_digits Give_me_solution;
-  Give_me_solution.reverse(str_input);
+  bool result;
 
-  printf("test\n");
-  printf("reverse string: %s\n", str_input); //print string with it's pointer
+  solution_buddy_string Give_me_solution;
+  result = Give_me_solution.compare(str_a, str_b);
+
+  printf("result = %d\n", result);
 
   return 0;
 

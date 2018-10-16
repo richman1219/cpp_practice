@@ -38,19 +38,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: cpp_pratice.exe
+all: cpp_practice.exe
 
 # Tool invocations
-cpp_pratice.exe: $(OBJS) $(USER_OBJS)
+cpp_practice.exe: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cygwin C++ Linker'
-	g++ -L"C:\eclipse_code\cpp_practice\header" -o "cpp_pratice.exe" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"C:\eclipse_code\cpp_practice\header" -o "cpp_practice.exe" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) cpp_pratice.exe
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) cpp_practice.exe
 	-@echo ' '
 
 .PHONY: all clean dependents
