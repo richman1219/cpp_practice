@@ -44,7 +44,7 @@ all: cpp_practice.exe
 cpp_practice.exe: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cygwin C++ Linker'
-	g++ -L"C:\eclipse_code\cpp_practice\header" -o "cpp_practice.exe" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"C:\eclipse_code\cpp_practice\header" -L"C:\Users\Rich\Documents\Code\sourcetree\cpp_practice\header" -o "cpp_practice.exe" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
