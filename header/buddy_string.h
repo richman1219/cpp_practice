@@ -66,6 +66,7 @@ public:
       }
 
     }
+  return same_flag;
   }
 
 };
@@ -74,7 +75,7 @@ public:
 int main_buddy_string()
 {
   char str_a[] = "aaabcddd";
-  char str_b[] = "aaacbddd";
+  char str_b[] = "aaacbsdd";
 
   bool result;
 
