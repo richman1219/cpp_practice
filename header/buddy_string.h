@@ -39,6 +39,11 @@ public:
     bool same_flag = true;
 
     //corner case handling
+    if((len_a != len_b) || (len_a < 2))
+    {
+      same_flag = false;
+      return same_flag;
+    }
 
     //normal case handling
     for(int i=0;i<len_a;i++)
@@ -74,8 +79,13 @@ public:
 
 int main_buddy_string()
 {
-  char str_a[] = "aaabcddd";
-  char str_b[] = "aaacbsdd";
+  /* test sequence
+  char str_a[] = "aaaacad";
+  char str_b[] = "acaacda";
+  */
+
+  char str_a[] = "bagggg";
+  char str_b[] = "abggaa";
 
   bool result;
 
