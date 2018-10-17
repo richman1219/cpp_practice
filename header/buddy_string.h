@@ -15,8 +15,8 @@
 using namespace std;
 
 /*try
- * computation complexity with O(1) solution
- * memory efficiency with O(1) solution
+ * computation complexity with O(n) solution
+ * memory efficiency with O(n) solution
  */
 
 /*Think flow

@@ -19,7 +19,10 @@
 
 /*String*/
 //#include "reverse_even_digits.h"
-#include "buddy_string.h"
+//#include "buddy_string.h"
+
+/*sorting*/
+#include "bubble_sort.h"
 
 using namespace std;
 
@@ -46,7 +49,10 @@ int main()
 
   /*String*/
   //main_reverse_string();
-  main_buddy_string();
+  //main_buddy_string();
+
+  /*sorting*/
+  main_bubble_sort();
 
 };
 
