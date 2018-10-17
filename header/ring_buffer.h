@@ -105,11 +105,11 @@ void ring_buffer_main(void)
   //get element
   printf("%d\n", test.get());
   printf("%d\n", test.get());
-  printf("%d\n", test.get());
-  printf("%d\n", test.get());
-  printf("%d\n", test.get());
+  //printf("%d\n", test.get());
+  //printf("%d\n", test.get());
+  //printf("%d\n", test.get());
 
-  test.insert(4);
+  test.insert(6);
   test.insert(5);
 
   printf("%d\n", test.get());
