@@ -1,5 +1,5 @@
 #include <iostream>  // Basic input and output library
-#include <cstdlib>   // system("pause
+#include <cstdlib>   // system("pause")
 /*hash*/
 //#include "leet_two_sum.h"
 
@@ -22,10 +22,16 @@
 //#include "buddy_string.h"
 
 /*sorting*/
-#include "bubble_sort.h"
+//#include "bubble_sort.h"
+
+/*lined list*/
+//#include "linked_list.h"
+
+/*ring buffer*/
+#include "ring_buffer.h"
 
 /*Misc*/
-#include "ring_buffer.h"
+#include "cpp_basic_0.h"
 
 using namespace std;
 
@@ -46,6 +52,7 @@ int main()
 	//main_b_tree_inorder();
 	//main_binary_search_tree_iterator();
 	//main_binary_tree_paths();
+
 	//main_two_sum_bst();
 
   /*Bit Manipulation*/
@@ -58,7 +65,12 @@ int main()
   //main_bubble_sort();
 
   /*ring buffer*/
-  ring_buffer_main();
+  //ring_buffer_main();
 
+  /*list test*/
+  //main_list_test();
+
+  /*cpp basic test*/
+  test_main();
 };
 
