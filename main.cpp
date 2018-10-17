@@ -24,6 +24,9 @@
 /*sorting*/
 #include "bubble_sort.h"
 
+/*lined list*/
+#include "linked_list.h"
+
 using namespace std;
 
 int main()
@@ -43,6 +46,7 @@ int main()
 	//main_b_tree_inorder();
 	//main_binary_search_tree_iterator();
 	//main_binary_tree_paths();
+
 	//main_two_sum_bst();
 
   /*Bit Manipulation*/
@@ -52,7 +56,11 @@ int main()
   //main_buddy_string();
 
   /*sorting*/
-  main_bubble_sort();
+  //main_bubble_sort();
+
+  /*list test*/
+
+  main_list_test();
 
 };
 
