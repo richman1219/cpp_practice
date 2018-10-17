@@ -52,7 +52,7 @@ int main()
   //main_buddy_string();
 
   /*sorting*/
-  main_bubble_sort();
+  //main_bubble_sort();
 
 };
 
