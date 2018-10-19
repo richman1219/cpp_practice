@@ -24,6 +24,9 @@
 /*sorting*/
 #include "bubble_sort.h"
 
+/*Misc*/
+#include "ring_buffer.h"
+
 using namespace std;
 
 int main()
@@ -52,7 +55,10 @@ int main()
   //main_buddy_string();
 
   /*sorting*/
-  main_bubble_sort();
+  //main_bubble_sort();
+
+  /*ring buffer*/
+  ring_buffer_main();
 
 };
 
