@@ -9,23 +9,23 @@
 #define HEADER_RING_BUFFER_H_
 
 /*Challenge
- *write a macro version
+ *write a macro version!!
  *write a class version
  */
 
 /*functionality
  * insert
  * get
- * get_size
- * check if size full
+ * get_size: check if size full/ empty
  * */
 
-/*
+/*Boundary condition/ corner case
  *handle wrap case for ring buffer
  * */
 
 /* Note
  * b_bottom = (int*)malloc(b_size*sizeof(int));
+ * cur_size = ((char*)b_top - (char*)b_bottom)/sizeof(int);
  * */
 
 //class version
@@ -33,13 +33,14 @@ class ring_buffer
 {
 public:
   int b_size, cur_size;
-  int *b_bottom, *b_top;
+  int *b_bottom, *b_top, *b_base;
 
   //constructor for buffer size initialization
   ring_buffer(int buffer_size)
   {
     b_size = buffer_size;
-    b_bottom = (int*)malloc(b_size*sizeof(int));
+    b_base = (int*)malloc(b_size*sizeof(int));
+    b_bottom = b_base;
     b_top = b_bottom;
   }
 
@@ -47,26 +48,32 @@ public:
   {
     if(get_cur_size() < b_size) // check if full
     {
-      b_top = b_top + 1;
       *b_top = input;
+      b_top = b_top + 1;
+      if(b_top > (b_base + b_size))
+        b_top = b_base;
     }
     else
     {
-      printf("full");
+      printf("full\n");
     }
   }
 
   int get()
   {
-
-    if(b_bottom != b_top)//check if it is not empty
+    int val;
+    if(get_cur_size() > 0)//check if empty
     {
+      val = *b_bottom;
       b_bottom = b_bottom + 1;
-      return *b_top;
+      if(b_bottom > (b_base + b_size))
+        b_bottom = b_base;
+
+      return val;
     }
     else
     {
-      printf("empty");
+      printf("empty\n");
       return 0;
     }
   }
@@ -99,6 +106,12 @@ void ring_buffer_main(void)
   printf("%d\n", test.get());
   printf("%d\n", test.get());
   printf("%d\n", test.get());
+  printf("%d\n", test.get());
+  printf("%d\n", test.get());
+
+  test.insert(4);
+  test.insert(5);
+
   printf("%d\n", test.get());
   printf("%d\n", test.get());
 
