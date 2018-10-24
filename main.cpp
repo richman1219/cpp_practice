@@ -24,8 +24,13 @@
 /*sorting*/
 #include "bubble_sort.h"
 
+
 /*lined list*/
 #include "linked_list.h"
+
+/*Misc*/
+#include "ring_buffer.h"
+
 
 using namespace std;
 
@@ -59,8 +64,10 @@ int main()
   //main_bubble_sort();
 
   /*list test*/
-
   main_list_test();
+
+  /*ring buffer*/
+  ring_buffer_main();
 
 };
 
