@@ -21,7 +21,8 @@ using namespace std;
  */
 
 /*Think flow
- *sequential search for each pair of characters, and compare the other part
+ *sequential search from start char and
+ *we need search function
  *remove corner case
  *UT for the function
 */
@@ -30,70 +31,45 @@ using namespace std;
  */
 
 
-class solution_buddy_string {
+class solution_find_longest_substring {
 public:
-  bool compare(char str_a[], char str_b[])
+  int search(char input_str[])
   {
-    int len_a = strlen(str_a);
-    int len_b = strlen(str_b);
+    //Key is the number and value is its index in the vector.
+    unordered_map<int, int> hash;
+    vector<int> result;
+    for (int i = 0; i < numbers.size(); i++) {
+      int numberToFind = target - numbers[i];
 
-    bool same_flag = true;
-
-    //corner case handling
-    if((len_a != len_b) || (len_a < 2))
-    {
-      same_flag = false;
-      return same_flag;
-    }
-
-    //normal case handling
-    for(int i=0;i<len_a;i++)
-    {
-
-      if(str_a[i] == str_b[i])
-      {
-        continue;
-      }
-      else
-      {
-        if((str_a[i] == str_b[i+1]) && (str_a[i+1] == str_b[i]))
-        {
-          //continue compare the other part in the string
-          if(i + 1 < len_a)
-          {
-            i = i + 1;
-            continue;
-          }
-        }
-        else
-        {
-          same_flag = false;
-        }
+      //if numberToFind is found in map, return them
+      if (hash.find(numberToFind) != hash.end()) {
+        //+1 because indices are NOT zero based
+        result.push_back(hash[numberToFind] + 1);
+        result.push_back(i + 1);
+        return result;
       }
 
+      //number was not found. Put it in the map.
+      hash[numbers[i]] = i;
     }
-  return same_flag;
+
+    return result;
   }
-
 };
 
 
-int main_buddy_string()
+int main_longest_substring()
 {
-  /* test sequence
-  char str_a[] = "aaaacad";
-  char str_b[] = "acaacda";
-  */
 
-  char str_a[] = "bagggg";
-  char str_b[] = "abggaa";
+  char str_a[] = "abcade";
+  char str_b[] = "abgaacde";
 
   bool result;
 
-  solution_buddy_string Give_me_solution;
-  result = Give_me_solution.compare(str_a, str_b);
+  solution_find_longest_substring Give_me_solution;
+  result = Give_me_solution.search(str_a);
 
-  printf("result = %d\n", result);
+  printf("result = %s\n", result);
 
   return 0;
 
