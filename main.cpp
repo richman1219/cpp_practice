@@ -22,14 +22,15 @@
 //#include "buddy_string.h"
 
 /*sorting*/
-#include "bubble_sort.h"
+//#include "bubble_sort.h"
 
 
 /*lined list*/
-#include "linked_list.h"
+//#include "linked_list.h"
 
 /*Misc*/
-#include "ring_buffer.h"
+//#include "ring_buffer.h"
+#include "binary_search.h"
 
 
 using namespace std;
@@ -64,10 +65,13 @@ int main()
   //main_bubble_sort();
 
   /*list test*/
-  main_list_test();
+  //main_list_test();
 
   /*ring buffer*/
-  ring_buffer_main();
+  //ring_buffer_main();
+
+  /*binary search*/
+  main_binary_search();
 
 };
 
