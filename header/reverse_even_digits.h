@@ -32,7 +32,7 @@ class solution_reverse_even_digits {
 public:
   void reverse(char str_input[])
   {
-    int num_digits = sizeof(str_input)/sizeof(char) - 1; //[TODO], Rich, Remember to subtract 1 for null terminator
+    int num_digits = sizeof(str_input)/sizeof(char) - 1; //[Note], Rich, Remember to subtract 1 for null terminator
 
     int i= 0, j = num_digits-1;
     char temp;
