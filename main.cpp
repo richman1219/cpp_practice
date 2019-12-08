@@ -30,7 +30,8 @@
 
 /*Misc*/
 //#include "ring_buffer.h"
-#include "binary_search.h"
+//#include "binary_search.h"
+#include "iota_atoi.h"
 
 
 using namespace std;
@@ -71,7 +72,14 @@ int main()
   //ring_buffer_main();
 
   /*binary search*/
-  main_binary_search();
+  //main_binary_search();
+
+  /*itoa*/
+  main_itoa();
+
+  /*atoi*/
+  //main_atoi();
+
 
 };
 
