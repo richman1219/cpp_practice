@@ -22,7 +22,7 @@ using namespace std;
 
 /*Think flow
  *sequential search for middle index
- *remove corner case
+ *remove corner case, case not found!!
  *UT for the function
  *Add assertion for infinite loop condition
 */
@@ -52,6 +52,13 @@ public:
           printf("rslt_idx = %d\n", right_idx);
           return right_idx;
         }
+
+        //[Note], case, not found
+        if(right_idx - left_idx == 1)
+        {
+           return 65535;
+        }
+
 
         middle_idx = (left_idx + right_idx)/2;
         printf("middle_idx = %d\n", middle_idx);
@@ -83,7 +90,8 @@ int main_binary_search()
 
   int len = sizeof(t_arr_0)/ sizeof(int);
   solution_binary_search Give_me_solution;
-  Give_me_solution.search(9, t_arr_0, len);
+  rslt_idx = Give_me_solution.search(100, t_arr_0, len);
+  printf("rslt_idx = %d", rslt_idx);
 
   return 0;
 
