@@ -68,6 +68,7 @@ public:
     do
     {
       a[i++] = s%10 +'0'; //[Note],  char add some offset is char already
+      printf("%d ", s);
     }while((s/=10)>0); //[Note], use  /= fast operation for calculation more efficiently
 
     if(sign==-1)
@@ -101,7 +102,7 @@ int main_atoi()
 
 int main_itoa()
 {
-  int s = -256934;
+  int s = 256934;
   char a[20];
 
   //int len = sizeof(t_arr_0)/ sizeof(char);

@@ -13,7 +13,7 @@
 using namespace std;
 
 /*try
- * computation complexity with O(1) solution
+ * computation complexity with O(N) solution
  * memory efficiency with O(1) solution
  */
 

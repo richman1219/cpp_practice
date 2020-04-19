@@ -17,7 +17,7 @@ public:
         do {
             res = res*10 + x%10;
         } while (x /= 10);
-        return res>INT_MAX ? 0 : res;  //INT_MAX = 2^31 - 1
+        return res>INT_MAX ? 0 : res;  //[Note], INT_MAX = 2^31 - 1
     }
 };
 
